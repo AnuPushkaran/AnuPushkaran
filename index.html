@@ -44,7 +44,7 @@
                 let scrollX = window.scrollX
                 square.style.display = 'none';
                 window.scrollTo(scrollY, scrollY);
-            } else if(window.scrollY < 50){
+            } else if(window.scrollY < 50 && !square.checkVisibility()){
                 square.style.display = 'block';
                  window.scrollTo(0, 0);
             }

@@ -4,7 +4,6 @@
     <title>Scroll Visibility</title>
     <style>
         body {
-            height: 200vh;
             margin: 0;
             display: flex;
             flex-direction: column;
@@ -38,11 +37,10 @@
     <script>
         window.addEventListener('scroll', function () {
             const square = document.getElementById('square');
-            const bottomSquare = document.getElementById('bottom-square');
-            if (window.scrollY < 1000) { // Adjust this value if necessary
-                square.style.visibility = 'hidden';
+            if (window.scrollY > 100) { // Adjust this value if necessary
+                square.style.display = 'none';
             } else {
-                square.style.visibility = 'visible';
+                square.style.display = 'block';
             }
         });
     </script>

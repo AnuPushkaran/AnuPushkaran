@@ -36,8 +36,9 @@
 
     <script>
         window.addEventListener('scroll', function () {
+            console.log("dcrolling");
             const square = document.getElementById('square');
-            console.log(window.scrollY > 50)
+            console.log(window.scrollY)
             if (window.scrollY > 50) { // Adjust this value if necessary
                 square.style.display = 'none';
             } else {
